@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     }
      
 
-    auto c_start = chrono::high_resolution_clock::now();
+    auto start = chrono::high_resolution_clock::now();
     string filename = argv[1];
     string outfile = argv[2];
     string outfileOc = argv[3];
