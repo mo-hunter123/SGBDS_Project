@@ -387,7 +387,7 @@ output
 
 *build-and-run.*
 
-moulinette
+./MOULINETTE_Project/moulinette
 livrable1
 livrable2
 VRPsimplex2

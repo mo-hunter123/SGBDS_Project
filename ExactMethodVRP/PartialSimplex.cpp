@@ -9,7 +9,7 @@
 
 using namespace std;
 
-#define NOT_EXIST_VALUE MAXFLOAT
+#define NOT_EXIST_VALUE (MAXFLOAT - 1000.0)
 
 double cost_tot = 0;
 int tot_clusters = 0;
@@ -155,7 +155,7 @@ void treatPartial(vector<vector<string>> &clusters, multiset<BusTrip> &busTripsP
     {
 
         C[i][0] = existCostFromTripToDepotAndCalculate((*it_to_i_trip).getBusStationArr()->getId(), depotId, interTrips);
-        C[i][N + 1] = existCostFromTripToDepotAndCalculate((*it_to_i_trip).getBusStationArr()->getId(), depotId, interTrips);
+        C[i][N + 1] = existCostFromTripToDepotAndCalculate((*it_to_i_trip).getBusStationArr()->getId(), depotId, interTrips) + 1000.0;
         C[0][i] = existCostFromDepotAndCalculate(depotId, (*it_to_i_trip).getBusStationDep()->getId(), interTrips);
         C[N + 1][i] = existCostFromDepotAndCalculate(depotId, (*it_to_i_trip).getBusStationDep()->getId(), interTrips);
 

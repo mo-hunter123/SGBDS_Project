@@ -52,7 +52,18 @@ You will find in `./MOULINETTE_Project` two files :
 - `./run.sh` : this file will let you run the executable. The pattern to run the following is 
   - ```./run.sh [path_to_data_file.txt] [path_to_cluster_data.txt] [path_to_statistics_destination.txt]```
 
+## To use the Simplex method 
 
+```
+cd ExactMethodVRP 
+
+```
+
+then run the makeFile to build the program and run the executable 
+
+```
+make VRPSimplex2 
+```
 
 
 ### Happy hacking 
